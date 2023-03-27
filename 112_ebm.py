@@ -26,6 +26,10 @@ if st.button('抽'):
         if len(who)==1:
             who=who[0]
             break
+    if r%2==0:
+        st.balloons()
+    else:
+        st.snow()
     st.markdown('#### '+'學號：'+str(who['學號']))
     st.markdown('#### '+'班級：'+who['學生班級'])
     st.markdown('#### '+'姓名：'+who['姓名'])
