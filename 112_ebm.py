@@ -19,10 +19,10 @@ st.markdown('### 抽點~')
 if st.button('抽'):
     while True:
         r=randrange(0,60)
-        print(r)
+        #print(r)
         who=db.fetch({'key':str(r),'1120321?ne':'OK'})
         who=who.items
-        print(who)
+        #print(who)
         if len(who)==1:
             who=who[0]
             break
