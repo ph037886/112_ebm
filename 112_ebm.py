@@ -20,7 +20,7 @@ if st.button('抽'):
     while True:
         r=randrange(0,60)
         #print(r)
-        who=db.fetch({'key':str(r),'1120321?ne':'OK'})
+        who=db.fetch({'key':str(r),'1120425?ne':'OK'})
         who=who.items
         #print(who)
         if len(who)==1:
@@ -34,7 +34,7 @@ if st.button('抽'):
     st.markdown('#### '+'班級：'+who['學生班級'])
     st.markdown('#### '+'姓名：'+who['姓名'])
     st.markdown('---') 
-    updates={"1120321":'OK'}
+    updates={"1120425":'OK'}
     db.update(updates, str(r))
 else:
     st.write('尚未抽出')
